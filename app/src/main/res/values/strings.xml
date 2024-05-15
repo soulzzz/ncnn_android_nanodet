@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">nanodetncnn</string>
+    <string-array name="model_array">
+<!--        <item>cigar-320</item>-->
+<!--        <item>cigar_plus_320</item>-->
+<!--        <item>zoo320</item>-->
+        <item>cigar-320</item>
+        <item>cigar-416</item>
+    </string-array>
+    <string-array name="cpugpu_array">
+        <item>CPU</item>
+        <item>GPU</item>
+    </string-array>
+</resources>

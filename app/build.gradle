@@ -1,0 +1,26 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.tencent.nanodetncnn'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.tencent.nanodetncnn"
+        archivesBaseName = "$applicationId"
+
+        minSdk 24
+    }
+
+    externalNativeBuild {
+        cmake {
+            version "3.10.2"
+            path file('src/main/jni/CMakeLists.txt')
+        }
+    }
+
+    dependencies {
+        implementation 'com.android.support:support-v4:24.0.0'
+    }
+}
